@@ -1,0 +1,123 @@
+export default function KnownIssues() {
+  return (
+    <div className="bg-white rounded-lg shadow-lg p-6 h-fit">
+      <h3 className="text-xl font-semibold text-gray-900 mb-6">Known Issues</h3>
+
+      <div className="space-y-5">
+        <div className="flex items-start gap-3">
+          <div className="flex-shrink-0 w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center mt-0.5">
+            <svg
+              className="w-4 h-4 text-white"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                fillRule="evenodd"
+                d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z"
+                clipRule="evenodd"
+              />
+            </svg>
+          </div>
+          <div>
+            <h4 className="font-medium text-gray-900 mb-1">
+              Duplicate Names Allowed
+            </h4>
+            <p className="text-gray-600 text-sm mb-2">
+              Users can join with the same display name, which may cause
+              confusion in conversations.
+            </p>
+            <div className="flex items-center gap-2 text-xs">
+              <span className="bg-orange-100 text-orange-800 px-2 py-1 rounded-full">
+                Will be fixed later
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div className="flex items-start gap-3">
+          <div className="flex-shrink-0 w-8 h-8 bg-red-500 rounded-full flex items-center justify-center mt-0.5">
+            <svg
+              className="w-4 h-4 text-white"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                fillRule="evenodd"
+                d="M4 2a1 1 0 011 1v2.101a7.002 7.002 0 0111.601 2.566 1 1 0 11-1.885.666A5.002 5.002 0 005.999 7H9a1 1 0 010 2H4a1 1 0 01-1-1V3a1 1 0 011-1zm.008 9.057a1 1 0 011.276.61A5.002 5.002 0 0014.001 13H11a1 1 0 110-2h5a1 1 0 011 1v5a1 1 0 11-2 0v-2.101a7.002 7.002 0 01-11.601-2.566 1 1 0 01.61-1.276z"
+                clipRule="evenodd"
+              />
+            </svg>
+          </div>
+          <div>
+            <h4 className="font-medium text-gray-900 mb-1">
+              Page Refresh Issues
+            </h4>
+            <p className="text-gray-600 text-sm mb-2">
+              When you refresh the page, you'll be notified about leaving and
+              rejoining the room. If you're the last person in the room,
+              refreshing will cause the room to disappear.
+            </p>
+            <div className="flex items-center gap-2 text-xs">
+              <span className="bg-red-100 text-red-800 px-2 py-1 rounded-full">
+                Known limitation
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div className="flex items-start gap-3">
+          <div className="flex-shrink-0 w-8 h-8 bg-yellow-500 rounded-full flex items-center justify-center mt-0.5">
+            <svg
+              className="w-4 h-4 text-white"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path
+                fillRule="evenodd"
+                d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z"
+                clipRule="evenodd"
+              />
+            </svg>
+          </div>
+          <div>
+            <h4 className="font-medium text-gray-900 mb-1">
+              Performance Related
+            </h4>
+            <p className="text-gray-600 text-sm mb-2">
+              The application may experience slower performance with many
+              concurrent users or in rooms with extensive chat history.
+            </p>
+            <div className="flex items-center gap-2 text-xs">
+              <span className="bg-yellow-100 text-yellow-800 px-2 py-1 rounded-full">
+                Under optimization
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Additional Info */}
+      <div className="mt-6 p-4 bg-gray-50 rounded-lg border border-gray-200">
+        <div className="flex items-center gap-2 mb-2">
+          <svg
+            className="w-5 h-5 text-gray-600"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+          >
+            <path
+              fillRule="evenodd"
+              d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
+              clipRule="evenodd"
+            />
+          </svg>
+          <h4 className="font-semibold text-gray-900">Reporting Issues</h4>
+        </div>
+        <p className="text-gray-700 text-sm">
+          If you encounter any bugs or have suggestions for improvement, please
+          be patient as this is a learning project. Your feedback helps me
+          improve the application. Contact: trunghauad03@gmail.com
+        </p>
+      </div>
+    </div>
+  );
+}
