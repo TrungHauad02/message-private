@@ -15,6 +15,7 @@ class ApiService {
         ...options.headers,
       },
       ...options,
+      credentials: "include",
     };
 
     try {
