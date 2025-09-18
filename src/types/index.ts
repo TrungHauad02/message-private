@@ -61,4 +61,5 @@ export interface ApiResponse<T = any> {
   roomInfo?: Room;
   messages?: Message[];
   count?: number;
+  isInRoom?: boolean;
 }

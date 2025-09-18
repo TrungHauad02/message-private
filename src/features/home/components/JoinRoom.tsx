@@ -3,6 +3,7 @@ import { LogIn, Clipboard } from "lucide-react";
 import toast from "react-hot-toast";
 import { useLocation, useNavigate } from "react-router-dom";
 import { useChatStore } from "../../../stores/chatStores";
+import { apiService } from "../../../services/apiService";
 
 export default function JoinRoom() {
   const navigate = useNavigate();
@@ -24,6 +25,24 @@ export default function JoinRoom() {
     e.preventDefault();
 
     // TODO: join room logic
+    // Check user in room already
+    try {
+      const response = await apiService.checkUserInRoom(
+        userName.trim(),
+        roomId.trim()
+      );
+      if (response.isInRoom) {
+        toast.error(
+          "This username have been already used by someone in this room"
+        );
+        return;
+      }
+    } catch (error) {
+      console.error("Error checking user in room:", error);
+      toast.error("Error checking room. Please try again.");
+      return;
+    }
+
     const success = await joinRoom(userName.trim(), roomId.trim());
 
     if (success) {

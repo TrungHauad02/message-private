@@ -187,7 +187,7 @@ export const useChatStore = create<ChatStore>()(
     }),
     {
       name: "chat-storage", // Tên key trong localStorage
-      storage: createJSONStorage(() => localStorage), // Sử dụng localStorage
+      storage: createJSONStorage(() => sessionStorage), // Sử dụng localStorage
 
       // Chỉ lưu những field cần thiết
       partialize: (state) => ({
