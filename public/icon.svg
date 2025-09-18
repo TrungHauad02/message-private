@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <defs>
+    <!-- Gradient cho background -->
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6366f1;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#8b5cf6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ec4899;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Gradient cho message bubble -->
+    <linearGradient id="bubbleGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f8fafc;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Shadow filter -->
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.3"/>
+    </filter>
+    
+    <!-- Glow effect -->
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Outer glow circle -->
+  <circle cx="50" cy="50" r="47" fill="url(#bgGradient)" opacity="0.3" filter="url(#glow)"/>
+  
+  <!-- Main background circle -->
+  <circle cx="50" cy="50" r="42" fill="url(#bgGradient)" filter="url(#shadow)"/>
+  
+  <!-- Inner highlight -->
+  <circle cx="48" cy="46" r="38" fill="url(#bgGradient)" opacity="0.6"/>
+  
+  <!-- Message bubble with modern design -->
+  <path d="M22 32 L72 32 Q78 32 78 38 L78 52 Q78 58 72 58 L45 58 L35 68 Q33 70 30 68 L30 58 L28 58 Q22 58 22 52 L22 38 Q22 32 28 32 Z" 
+        fill="url(#bubbleGradient)" 
+        filter="url(#shadow)"
+        stroke="#e2e8f0" 
+        stroke-width="0.5"/>
+  
+  <!-- Decorative dots in bubble -->
+  <circle cx="35" cy="45" r="2" fill="#94a3b8" opacity="0.4"/>
+  <circle cx="44" cy="45" r="2" fill="#94a3b8" opacity="0.6"/>
+  <circle cx="53" cy="45" r="2" fill="#94a3b8" opacity="0.4"/>
+  
+  <!-- Modern lock design -->
+  <rect x="56" y="40" width="18" height="14" rx="3" 
+        fill="#1e293b" 
+        filter="url(#shadow)"/>
+  
+  <!-- Lock shackle with gradient -->
+  <path d="M59 40 L59 35 Q59 31 62 31 Q65 31 68 31 Q71 31 71 35 L71 40" 
+        stroke="#1e293b" 
+        stroke-width="2.5" 
+        fill="none" 
+        stroke-linecap="round"/>
+  
+  <!-- Modern keyhole -->
+  <circle cx="65" cy="45" r="2" fill="#6366f1"/>
+  <path d="M65 47 L65 50" stroke="#6366f1" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Shield accent -->
+  <path d="M62 38 Q65 35 68 38 Q71 41 68 44 Q65 47 62 44 Q59 41 62 38 Z" 
+        fill="#6366f1" 
+        opacity="0.2"/>
+  
+  <!-- Sparkle effects -->
+  <path d="M28 25 L30 27 L28 29 L26 27 Z" fill="#ffffff" opacity="0.8"/>
+  <path d="M75 28 L76 30 L75 32 L74 30 Z" fill="#ffffff" opacity="0.6"/>
+  <path d="M82 45 L84 47 L82 49 L80 47 Z" fill="#ffffff" opacity="0.7"/>
+  <path d="M18 55 L19 57 L18 59 L17 57 Z" fill="#ffffff" opacity="0.5"/>
+</svg>
