@@ -5,36 +5,6 @@ export default function KnownIssues() {
 
       <div className="space-y-5">
         <div className="flex items-start gap-3">
-          <div className="flex-shrink-0 w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center mt-0.5">
-            <svg
-              className="w-4 h-4 text-white"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-            >
-              <path
-                fillRule="evenodd"
-                d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z"
-                clipRule="evenodd"
-              />
-            </svg>
-          </div>
-          <div>
-            <h4 className="font-medium text-gray-900 mb-1">
-              Duplicate Names Allowed
-            </h4>
-            <p className="text-gray-600 text-sm mb-2">
-              Users can join with the same display name, which may cause
-              confusion in conversations.
-            </p>
-            <div className="flex items-center gap-2 text-xs">
-              <span className="bg-orange-100 text-orange-800 px-2 py-1 rounded-full">
-                Will be fixed later
-              </span>
-            </div>
-          </div>
-        </div>
-
-        <div className="flex items-start gap-3">
           <div className="flex-shrink-0 w-8 h-8 bg-red-500 rounded-full flex items-center justify-center mt-0.5">
             <svg
               className="w-4 h-4 text-white"
